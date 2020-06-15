@@ -1,5 +1,5 @@
 function fetchData(param) {
-  fetch(`https://jsonplaceholder.typicode.com/photos/${param}`, { mode: 'no-cors'})
+  fetch(`https://jsonplaceholder.typicode.com/photos/${param}`)
     .then(response => {
       console.log(response.json());
       response.json()
