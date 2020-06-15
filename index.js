@@ -17,24 +17,24 @@ app.get('/home-en', (req, res) => {
 })
 
 app.get('/gonchari-ua', (req, res) => {
-  res.sendFile('public/index_en.html', {root: __dirname });
+  res.sendFile('public/page1_ua.html', {root: __dirname });
 })
 app.get('/gonchari-en', (req, res) => {
-  res.sendFile('public/index_en.html', {root: __dirname });
+  res.sendFile('public/page1_en.html', {root: __dirname });
 })
 
 app.get('/rizbyari-ua', (req, res) => {
-  res.sendFile('public/index_en.html', {root: __dirname });
+  res.sendFile('public/page2_ua.html', {root: __dirname });
 })
 app.get('/rizbyari-en', (req, res) => {
-  res.sendFile('public/index_en.html', {root: __dirname });
+  res.sendFile('public/page2_en.html', {root: __dirname });
 })
 
 app.get('/chynbyari-ua', (req, res) => {
-  res.sendFile('public/index_en.html', {root: __dirname });
+  res.sendFile('public/page3_ua.html', {root: __dirname });
 })
 app.get('/chynbyari-en', (req, res) => {
-  res.sendFile('public/index_en.html', {root: __dirname });
+  res.sendFile('public/page3_en.html', {root: __dirname });
 })
 
 app.get('/cv-ua', (req, res) => {
