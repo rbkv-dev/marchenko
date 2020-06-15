@@ -1,0 +1,16 @@
+{
+  "photos": [
+    {
+      "id": "1",
+      "url": "/assets/page1.jpg"
+    },
+    {
+      "id": "2",
+      "url": "/assets/page2.jpg"
+    },
+    {
+      "id": "3",
+      "url": "/assets/page3.jpg"
+    }
+  ]
+}

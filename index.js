@@ -16,6 +16,12 @@ const PORT = process.env.PORT || 80
 app.use(cors())
 app.use(express.static(__dirname + '/public'));
 
+const photos = require("./public/js/lab_4.json");
+
+app.get("/photos", (req, res) => {
+  return res.send(photos);
+});
+
 app.get('/', (req, res) => {
   res.sendFile('public/index_ua.html', {root: __dirname });
 })
