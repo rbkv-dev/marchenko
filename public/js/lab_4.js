@@ -1,8 +1,8 @@
 // const axios = require('axios');
 
-function fetchData(id) {
+function fetchData(param) {
 
-  axios.get(`https://marchenko-sonya.herokuapp.com/photos/${id}`)
+  axios.get(`https://marchenko-sonya.herokuapp.com/photos/`)
   .then(function (response) {
     console.log(response);
     // response.json()

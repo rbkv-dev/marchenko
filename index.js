@@ -14,16 +14,11 @@ const PORT = process.env.PORT || 80
 // };
 
 app.use(cors());
-
 app.use(express.static(__dirname + '/public'));
 
 const photos = require("./public/js/lab_4.json");
-
-
-app.get("/photos/:id", (req, res) => {
-  console.log(req.params.id);
-  
-  // return res.json(photos);
+app.get("/photos", (req, res) => {  
+  return res.send(photos);
 });
 
 app.get('/', (req, res) => {
