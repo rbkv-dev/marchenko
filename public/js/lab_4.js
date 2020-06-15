@@ -1,14 +1,14 @@
 // const axios = require('axios');
 
-function fetchData(param) {
+function fetchData(id) {
 
-  axios.get(`https://marchenko-sonya.herokuapp.com/photos/`)
+  axios.get(`https://marchenko-sonya.herokuapp.com/photos/${id}`)
   .then(function (response) {
     console.log(response);
-    response.json()
+    // response.json()
   })
   .then(json => {
-    console.log(json);
+    // console.log(json);
     // document.querySelector("#photo img").src = json.url
   })
   .catch(function (error) {
