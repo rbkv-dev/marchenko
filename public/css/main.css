@@ -51,3 +51,8 @@ header nav img {
   height: 30px;
   margin-right: 10px;
 }
+
+#photo img {
+  width: 100%;
+  height: auto;
+}

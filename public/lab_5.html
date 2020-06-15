@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake</title>
+    <link rel="stylesheet" href="/public/css/lab_5.css">
+  </head>
+  <body>
+    <div id="panel"></div>
+    <div id="root"></div>
+    <div id="modal"></div>
+    <button onclick="alert( 'This function was called from inline script' );">Press to alert from inline script</button>
+    <button onclick="alertFromHTML()">Press to alert from script tag</button>
+    <button onclick="alertFromJSFile()">Press to alert from script file</button>
+    
+    <input type="button" onclick="history.back(-1); return false;" value="Back"/>
+    <script>
+      function alertFromHTML() {
+        alert( 'This function was called from the body of the web page (script tag)' );
+      }
+     </script>     
+     <script src="/js/lab_5.js"></script>
+  </body>
+</html>

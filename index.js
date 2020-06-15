@@ -44,6 +44,14 @@ app.get('/cv-en', (req, res) => {
   res.sendFile('public/CV_en.html', {root: __dirname });
 })
 
+app.get('/lab-4', (req, res) => {
+  res.sendFile('public/lab_4.html', {root: __dirname });
+})
+app.get('/lab-5', (req, res) => {
+  res.sendFile('public/lab_5.html', {root: __dirname });
+})
+
+
 app.listen(PORT, () => {
   console.log('Server has been started . . .');
 })
