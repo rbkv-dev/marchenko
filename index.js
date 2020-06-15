@@ -4,14 +4,14 @@ const app = express()
 
 const PORT = process.env.PORT || 80
 
-const cors = (req, res, next) => {
+// const cors = (req, res, next) => {
 
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Methods", "GET, PUT, PATCH, POST, DELETE");
-  res.header("Access-Control-Allow-Headers", "Origin, Content-Type");
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header("Access-Control-Allow-Methods", "GET, PUT, PATCH, POST, DELETE");
+//   res.header("Access-Control-Allow-Headers", "Origin, Content-Type");
 
-  next();
-};
+//   next();
+// };
 
 app.use(cors())
 app.use(express.static(__dirname + '/public'));
