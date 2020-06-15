@@ -10,12 +10,8 @@ app.use(cors());
 app.use(express.static(__dirname + '/public'));
 
 const albom = require("./public/js/lab_4.json");
-
 app.get('/photos/:id', function (req, res, next) {
-  // console.log('ID:', req.params.id);
-  const {id} = req.params;
-  const result = albom.photos.filter(e => e.id===id)
-  return res.send(result);
+  return res.send(albom.photos.filter(e => e.id === req.params));
 });
 
 app.get('/', (req, res) => {
