@@ -11,7 +11,7 @@ app.use(express.static(__dirname + '/public'));
 
 const albom = require("./public/js/lab_4.json");
 app.get('/photos/:id', function (req, res, next) {
-  return res.send(albom.photos.filter(e => e.id === req.params));
+  return res.send(albom.photos.filter(e => e.id === req.params.id));
 });
 
 app.get('/', (req, res) => {
