@@ -4,7 +4,8 @@ function fetchData(param) {
 
   axios.get(`https://marchenko-sonya.herokuapp.com/photos/${param}`)
   .then(function (response) {
-    console.log(response);
+    console.log(response.response[0]);
+    console.log(response.response[0].url);
     // response.json()
     // console.log(param);
     
