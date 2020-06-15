@@ -35,7 +35,12 @@ body {
   cursor: pointer;
 }
 
-
+span {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 24px;
+  color: rgb(121, 121, 121);
+}
 
 #root {
   display: grid;
@@ -69,6 +74,7 @@ body {
   align-items: center;
   background: rgba(0, 0, 0, 0.5);
 }
+
 .content {
   display: flex;
   flex-direction: column;
@@ -123,5 +129,5 @@ body input {
   background: transparent;
   cursor: pointer;
   text-decoration: none;
-  font:  Arial;
+  font: Arial;
 }
