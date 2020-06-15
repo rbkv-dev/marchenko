@@ -1,24 +1,21 @@
-const express = require('express')
+const express = require('express');
+const bodyParser = require('body-parser');
+
 var cors = require('cors')
 const app = express()
 
-const PORT = process.env.PORT || 80
-
-// const cors = (req, res, next) => {
-
-//   res.header("Access-Control-Allow-Origin", "*");
-//   res.header("Access-Control-Allow-Methods", "GET, PUT, PATCH, POST, DELETE");
-//   res.header("Access-Control-Allow-Headers", "Origin, Content-Type");
-
-//   next();
-// };
-
+const PORT = process.env.PORT || 8080
+// app.use(bodyParser);
 app.use(cors());
 app.use(express.static(__dirname + '/public'));
 
-const photos = require("./public/js/lab_4.json");
-app.get("/photos", (req, res) => {  
-  return res.send(photos);
+const albom = require("./public/js/lab_4.json");
+
+app.get('/photos/:id', function (req, res, next) {
+  // console.log('ID:', req.params.id);
+  const {id} = req.params;
+  const result = albom.photos.filter(e => e.id===id)
+  return res.send(result);
 });
 
 app.get('/', (req, res) => {

@@ -2,15 +2,17 @@
 
 function fetchData(param) {
 
-  axios.get(`https://marchenko-sonya.herokuapp.com/photos/`)
+  axios.get(`https://marchenko-sonya.herokuapp.com/photos/${param}`)
   .then(function (response) {
     console.log(response);
     // response.json()
+    // console.log(param);
+    
   })
-  .then(json => {
+  // .then(json => {
     // console.log(json);
     // document.querySelector("#photo img").src = json.url
-  })
+  // })
   .catch(function (error) {
     console.log(error);
   })
